@@ -18,13 +18,13 @@ document.getElementById("test").onsubmit = function(event) {
     })
     .then(response => {
         if (response.ok) {
-            alert('Form submitted successfully!');
+            alert('Message sent successfully!');
             // Clear form fields
             document.getElementById("fname").value = "";
             document.getElementsByName("Email")[0].value = "";
             document.getElementsByName("Message")[0].value = "";
         } else {
-            alert('Error submitting the form. Please try again later.');
+            alert('Error sending the message. Please try again later.');
         }
     })
     .catch(error => {
